@@ -1,0 +1,27 @@
+:root{
+    --main-color1: #7066ff;
+    --main-color2: #9c95fd;
+    --main-color3: #b6b1ff;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+button {
+    background-color: #8a82ff;
+
+    border: 0;
+    border-radius: 10px;
+
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #9c95fd;
+    transform: scale(1.01);
+}
+
+button:active {
+    transform: scale(0.99);
+}
