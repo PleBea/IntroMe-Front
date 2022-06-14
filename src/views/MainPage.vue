@@ -1,9 +1,16 @@
 <template>
-    <div id="main">
-        <div id="main-text">
-            <h1>IntroMe</h1>
-            <p>IntroMe는 </p>
+    <!-- 헤더 부분 ( 로그인 , 회원 가입 )  -->
+    <div id="header">
+        <p id="header-title">IntroMe</p>
+        <div id="login">
+            <a href="#">Log In</a>
+            <a href="#">Sign In</a>
         </div>
+    </div>
+    
+    <!-- 설명 텍스트 부분 -->
+    <div id="">
+
     </div>
 </template>
 
@@ -14,22 +21,42 @@ export default {
 </script>
 
 <style>
-#main {
-    width: 100%;
-    height: 100vh;
+#header {
+    padding-left: 172px;
+    padding-right: 172px;
+
+    display: flex;
 }
 
-#main-text {
-    padding-left: 158px;
-    padding-right: 158px;
+#header-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    flex: 1 1 auto;
 }
 
-#main h1 {
-    font-size: 48px;
-    color: var(--main-color1);
+#header a{
+    text-decoration: none;
+    color: black;
+
+    transition: 0.1s;
 }
 
-#main p{
-    color: var(--main-color3);
+#header a:hover{
+    text-decoration: underline;
+}
+
+#header a:active{
+    transform: translate(0, 1px);
+}
+
+#login {
+    display: flex;
+    gap: 15px;
+
+    align-items: center;
 }
 </style>
