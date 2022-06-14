@@ -1,4 +1,4 @@
-# introme-front
+# IntroMe-Front
 
 ## Project setup
 ```
