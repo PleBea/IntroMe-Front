@@ -3,7 +3,7 @@
     <div id="header" class="container">
         <p id="header-title">IntroMe</p>
         <div id="login">
-            <a href="#">Log In</a>
+            <a href="/login">Log In</a>
             <a href="#">Sign In</a>
         </div>
     </div>
