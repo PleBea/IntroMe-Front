@@ -21,7 +21,7 @@ const routes = [
     component: ProfilePage
   },
   {
-    path: '/regsiter',
+    path: '/register',
     name: 'SigninPage',
     component: SigninPage
   }
