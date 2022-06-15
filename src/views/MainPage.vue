@@ -14,7 +14,9 @@
             <h1>IntroMe is a website<br/> where you can easily introduce yourself</h1>
             <p>You can show anyone the link to your profile site.<br/>For example, Facebook, Instagram, etc</p>
         </div>
-        <img src="../assets/user.png" alt="3d이미지" id="img3d">
+        <div style="display:flex;align-items:center;flex-direction:column;">
+            <img src="../assets/user.png" alt="3d이미지" id="img3d">
+        </div>
     </div>
 </template>
 
@@ -97,5 +99,41 @@ export default {
 
 #img3d:hover {
     transform: scale(1.03);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    #body-box {
+        flex-direction: column-reverse;
+    }
+    #body-box img{ 
+        width: 128px;
+        height: 128px;
+    }
+    #body-box h1 {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+    #header-title {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        font-size: 32px;
+        font-weight: bold;
+
+        flex: 1 1 auto;
+    }
+    #header a {
+        font-size: 14px;
+    }
+    
+    #body-box p{
+        font-size: 14px;
+        padding-bottom: 70px;
+    }
 }
 </style>
