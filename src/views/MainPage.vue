@@ -1,6 +1,6 @@
 <template>
     <!-- 헤더 부분 ( 로그인 , 회원 가입 )  -->
-    <div id="header">
+    <div id="header" class="container">
         <p id="header-title">IntroMe</p>
         <div id="login">
             <a href="#">Log In</a>
@@ -9,8 +9,12 @@
     </div>
     
     <!-- 설명 텍스트 부분 -->
-    <div id="">
-
+    <div id="body-box" class="container">
+        <div id="body-text">
+            <h1>IntroMe is a website<br/> where you can easily introduce yourself</h1>
+            <p>You can show anyone the link to your profile site.<br/>For example, Facebook, Instagram, etc</p>
+        </div>
+        <img src="../assets/user.png" alt="3d이미지" id="img3d">
     </div>
 </template>
 
@@ -22,10 +26,9 @@ export default {
 
 <style>
 #header {
-    padding-left: 172px;
-    padding-right: 172px;
-
     display: flex;
+
+    color: var(--main-color1);
 }
 
 #header-title {
@@ -42,15 +45,16 @@ export default {
     text-decoration: none;
     color: black;
 
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 #header a:hover{
     text-decoration: underline;
+    color: rgb(108, 108, 108);
 }
 
 #header a:active{
-    transform: translate(0, 1px);
+    transform: translate(0, 2px);
 }
 
 #login {
@@ -58,5 +62,40 @@ export default {
     gap: 15px;
 
     align-items: center;
+}
+
+#body-box{
+    background-color: var(--gray);
+    color: rgb(77, 77, 77);
+    
+    display: flex;
+}
+#body-box h1{
+    padding-top: 70px;
+    padding-bottom: 12px;
+    font-size: 42px;
+
+    color: black;
+}
+
+#body-box p{
+    font-size: 18px;
+    padding-bottom: 70px;
+}
+
+#body-text {
+    flex: 1 1 auto;
+}
+
+#img3d {
+    margin-top: 38px;
+    width: 256px; 
+    height: 256px;
+    
+    transition: 0.2s;
+}
+
+#img3d:hover {
+    transform: scale(1.03);
 }
 </style>
