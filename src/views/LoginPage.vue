@@ -1,11 +1,12 @@
 <template>
     <div id="login-box">
         <h1>Login</h1>
-        <div id="login-input-box">
+        <div class="account-input-box">
             <input type="text" placeholder="id">
-            <input type="password" placeholder="password">
+            <input type="password" placeholder="pw">
         </div>
-        <button id="login-btn">Login</button>
+        <button class="account-btn">Login</button>
+        <a href="#">forget id or pw?</a>
     </div>
 </template>
 
@@ -30,12 +31,12 @@ export default {
 
     margin-bottom: 14px;
 }
-#login-input-box {
+.account-input-box {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
-#login-input-box input{
+.account-input-box input{
     font-family: inherit;
 
     outline: 0;
@@ -46,7 +47,7 @@ export default {
     padding: 7px 12px 7px 12px;
 }
 
-#login-btn {
+.account-btn {
 
     margin-top: 8px;
     width: 100%;
@@ -58,8 +59,16 @@ export default {
     padding: 7px;
     transition: 0.2s;
 }
-#login-btn:hover {
+.account-btn:hover {
     color: black;
     background-color: #fff;
+}
+#login-box a{
+    text-decoration: underline;
+    color:black;
+    font-size: 10px;
+    margin-top: 5px;
+    display: block;
+    text-align: right;
 }
 </style>
