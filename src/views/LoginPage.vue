@@ -55,6 +55,7 @@ export default {
     color: white;
 
     border-radius: 7px;
+    border: 2px solid black;
 
     padding: 7px;
     transition: 0.2s;
@@ -62,6 +63,7 @@ export default {
 .account-btn:hover {
     color: black;
     background-color: #fff;
+    cursor: pointer;
 }
 #login-box a{
     text-decoration: underline;
