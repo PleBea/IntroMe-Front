@@ -4,7 +4,7 @@
         <p id="header-title">IntroMe</p>
         <div id="login">
             <a href="/login">Log In</a>
-            <a href="#">Sign In</a>
+            <a href="/register">Sign In</a>
         </div>
     </div>
     
